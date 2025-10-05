@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building from GitHub...'
+                sh 'sleep 2'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                sh 'sleep 2'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                sh 'sleep 2'
+                echo 'Deployed successfully 🚀'
+            }
+        }
+    }
+}
+
